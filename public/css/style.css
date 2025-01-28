@@ -1,0 +1,89 @@
+body{
+    font-family: "Roboto", serif !important;
+  font-weight: 500;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container{
+    flex:1;
+}
+/* footer */
+ .f-info-links a{
+    text-decoration: none;
+    color: black;
+ }
+ .f-info-links a:hover{
+    text-decoration:underline;
+ }
+ .f-info{
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: black;
+ }
+.f-info-links {
+    width: 100px;
+}
+.f-info-socials{
+    font-size: 1.2rem;
+    color: black;
+}
+
+
+/* cards */
+.listing-card{
+    border: none !important;
+    margin-bottom: 2rem;
+}
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+.card-body{
+    padding: 0;
+}
+.card-text p {
+     font-weight: 400 !important;
+}
+.listing-link{
+    text-decoration: none;
+}
+/* card effect */
+.card-img-overlay{
+    opacity: 0;
+    background-color: #ebebeb;
+}
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white
+}
+
+
+.add-btn{
+    background-color:#fe424d !important ;
+    border: none !important;
+}
+.edit-btn{
+    background-color:#fe424d !important ;
+    border: none !important;
+}
+
+.show-img{
+    height: 30vh;
+}
+.btns
+{
+    display:flex ;
+}
+.show-card{
+    padding-left: 0;
+    padding-right: 0;
+}
