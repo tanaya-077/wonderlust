@@ -12,15 +12,18 @@
     />
     <div class="card-body">
       <p class="card-text">
-        <b><%= listing.title %></b> <br />
-        <%= listing.description %> <br />
-        &#8377;<%= listing.price.toLocaleString("en-IN") %> <br />
-        <%= listing.location %> <br />
-        <%= listing.country %>
+        <b><%= listing.title %></b><br>
+      </p>
+
+      <p class="card-text"> <b><i>Owned by :<%= listing.owner.username %></i></b><br></p>
+      <p class="card-text"> <%= listing.description %> <br /></p>
+      <p class="card-text">&#8377;<%= listing.price.toLocaleString("en-IN") %> <br /></p> 
+      <p class="card-text"> <%= listing.location %> <br /></p>
+      <p class="card-text"> <%= listing.country %>
       </p>
     </div>
   </div>
-  <div class="btns">
+  <div class="btns mt-3">
     <a
       href="/listings/<%= listing._id %>/edit"
       class="btn btn-dark col-1 offset-3 edit-btn"
@@ -32,7 +35,7 @@
   </div>
 </div>
 
-<div class="coffset-3ol-8">
+<div class="offset-3 col-8">
   <hr />
   <h4>Leave Review</h4>
   <form class="mb-3" action="/listings/<%= listing.id %>/reviews" method="post">
@@ -48,7 +51,7 @@
       />
     </div>
     <div class="mb-3 mt-3">
-      <label for="comment" class="form-label">commrnt</label>
+      <label for="comment" class="form-label">comment</label>
       <textarea
         class="form-control"
         name="reviews[comment]"
@@ -57,7 +60,7 @@
         rows="10"
       ></textarea>
     </div>
-    <button>Submit</button>
+    <button class="btn btn-dark">Submit</button>
   </form>
   <hr />
   <p> <b>All Reviews</b></p>

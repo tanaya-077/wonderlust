@@ -32,12 +32,13 @@
       <div>
         <label for="image" class="form-label">Image:</label>
         <input
-          name="listing[image]"
-          id="image"
-          class="form-control"
-          value="<%= listing.image %>"
-          required
+            name="listing[image][url]"
+            id="image"
+            class="form-control"
+            value="<%= listing.image.url %>"
+           
         />
+    </div>
       </div>
       <div class="row">
         <div class="mb-3 col-md-4">
@@ -75,7 +76,8 @@
           value="<%= listing.location %>"
           type="text"
           required
-        /><br /><br />
+        />
+        <br /><br />
         <div class="invalid-feedback">enter valid location</div>
       </div>
 
